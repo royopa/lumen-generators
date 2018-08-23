@@ -60,7 +60,7 @@ public function register()
 }
 ```
 
-**Don't forget to include the application service provider on your `bootstrap/app.php` and to enable Eloquent and Facades if you are using Lumen**
+**Don't forget to include the application service provider on your `bootstrap/app.php` ($app->register('Wn\Generators\CommandsServiceProvider');) and to enable Eloquent (uncomment the line $app->withEloquent();) and Facades (uncomment the line $app->withFacades();) if you are using Lumen**
 
 
 If you run the command `php artisan list` you will see the list of added commands:
